@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B21324981B61F6120070911F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B21324971B61F6120070911F /* libsqlite3.dylib */; };
+		B213249A1B61F6290070911F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B21324991B61F6290070911F /* libz.dylib */; };
+		B213249C1B61F6300070911F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B213249B1B61F6300070911F /* CFNetwork.framework */; };
+		B21324A11B6206CA0070911F /* ZumeroSync.m in Sources */ = {isa = PBXBuildFile; fileRef = B213249E1B6206CA0070911F /* ZumeroSync.m */; };
+		B21324A21B6206CA0070911F /* ZumeroUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B21324A01B6206CA0070911F /* ZumeroUtil.m */; };
+		B21324A41B6206DB0070911F /* zumero_client_api.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B21324A31B6206DB0070911F /* zumero_client_api.a */; };
+		B2D949D41B61F3F8009823AC /* mergZumero.lcidl in Sources */ = {isa = PBXBuildFile; fileRef = B2D949D31B61F3F8009823AC /* mergZumero.lcidl */; };
+		B2D949D61B61F3F8009823AC /* mergZumero.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D949D51B61F3F8009823AC /* mergZumero.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2D949CF1B61F3F7009823AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2D949C21B61F3F7009823AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2D949C91B61F3F7009823AC;
+			remoteInfo = mergZumero;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B21324971B61F6120070911F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B21324991B61F6290070911F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B213249B1B61F6300070911F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B213249D1B6206CA0070911F /* ZumeroSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZumeroSync.h; path = Zumero/ios/src/ZumeroSync.h; sourceTree = "<group>"; };
+		B213249E1B6206CA0070911F /* ZumeroSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZumeroSync.m; path = Zumero/ios/src/ZumeroSync.m; sourceTree = "<group>"; };
+		B213249F1B6206CA0070911F /* ZumeroUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZumeroUtil.h; path = Zumero/ios/src/ZumeroUtil.h; sourceTree = "<group>"; };
+		B21324A01B6206CA0070911F /* ZumeroUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZumeroUtil.m; path = Zumero/ios/src/ZumeroUtil.m; sourceTree = "<group>"; };
+		B21324A31B6206DB0070911F /* zumero_client_api.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = zumero_client_api.a; path = Zumero/ios/C/zumero_client_api.a; sourceTree = "<group>"; };
+		B2D949CA1B61F3F7009823AC /* libmergZumero.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmergZumero.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D949CE1B61F3F7009823AC /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D949D21B61F3F8009823AC /* mergZumero.ios */ = {isa = PBXFileReference; lastKnownFileType = text; path = mergZumero.ios; sourceTree = "<group>"; };
+		B2D949D31B61F3F8009823AC /* mergZumero.lcidl */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.livecode.idl; path = mergZumero.lcidl; sourceTree = "<group>"; };
+		B2D949D51B61F3F8009823AC /* mergZumero.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mergZumero.m; sourceTree = "<group>"; };
+		B2D949D71B61F3F8009823AC /* mergZumero.livecode */ = {isa = PBXFileReference; lastKnownFileType = file; path = mergZumero.livecode; sourceTree = "<group>"; };
+		B2D949D81B61F3F8009823AC /* test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "test-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2D949C71B61F3F7009823AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B213249C1B61F6300070911F /* CFNetwork.framework in Frameworks */,
+				B213249A1B61F6290070911F /* libz.dylib in Frameworks */,
+				B21324981B61F6120070911F /* libsqlite3.dylib in Frameworks */,
+				B21324A41B6206DB0070911F /* zumero_client_api.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2D949C11B61F3F7009823AC = {
+			isa = PBXGroup;
+			children = (
+				B213249D1B6206CA0070911F /* ZumeroSync.h */,
+				B213249E1B6206CA0070911F /* ZumeroSync.m */,
+				B213249F1B6206CA0070911F /* ZumeroUtil.h */,
+				B21324A01B6206CA0070911F /* ZumeroUtil.m */,
+				B213249B1B61F6300070911F /* CFNetwork.framework */,
+				B21324991B61F6290070911F /* libz.dylib */,
+				B21324A31B6206DB0070911F /* zumero_client_api.a */,
+				B21324971B61F6120070911F /* libsqlite3.dylib */,
+				B2D949D11B61F3F7009823AC /* mergZumero */,
+				B2D949CB1B61F3F7009823AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2D949CB1B61F3F7009823AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2D949CA1B61F3F7009823AC /* libmergZumero.a */,
+				B2D949CE1B61F3F7009823AC /* test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2D949D11B61F3F7009823AC /* mergZumero */ = {
+			isa = PBXGroup;
+			children = (
+				B2D949D21B61F3F8009823AC /* mergZumero.ios */,
+				B2D949D31B61F3F8009823AC /* mergZumero.lcidl */,
+				B2D949D51B61F3F8009823AC /* mergZumero.m */,
+				B2D949D71B61F3F8009823AC /* mergZumero.livecode */,
+				B2D949D81B61F3F8009823AC /* test-Info.plist */,
+			);
+			path = mergZumero;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2D949C91B61F3F7009823AC /* mergZumero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2D949DB1B61F3F8009823AC /* Build configuration list for PBXNativeTarget "mergZumero" */;
+			buildPhases = (
+				B2D949C61B61F3F7009823AC /* Sources */,
+				B2D949C71B61F3F7009823AC /* Frameworks */,
+				B2D949C81B61F3F7009823AC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mergZumero;
+			productName = mergZumero;
+			productReference = B2D949CA1B61F3F7009823AC /* libmergZumero.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B2D949CD1B61F3F7009823AC /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2D949DE1B61F3F8009823AC /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				B2D949CC1B61F3F7009823AC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2D949D01B61F3F7009823AC /* PBXTargetDependency */,
+			);
+			name = test;
+			productName = test;
+			productReference = B2D949CE1B61F3F7009823AC /* test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2D949C21B61F3F7009823AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+			};
+			buildConfigurationList = B2D949C51B61F3F7009823AC /* Build configuration list for PBXProject "mergZumero" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B2D949C11B61F3F7009823AC;
+			productRefGroup = B2D949CB1B61F3F7009823AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2D949C91B61F3F7009823AC /* mergZumero */,
+				B2D949CD1B61F3F7009823AC /* test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B2D949C81B61F3F7009823AC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "sh \"$LIVECODE_SDKROOT/tools/lclink.sh\"";
+		};
+		B2D949CC1B61F3F7009823AC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "sh \"$LIVECODE_SDKROOT/tools/lclinktest.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2D949C61B61F3F7009823AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2D949D61B61F3F8009823AC /* mergZumero.m in Sources */,
+				B2D949D41B61F3F8009823AC /* mergZumero.lcidl in Sources */,
+				B21324A11B6206CA0070911F /* ZumeroSync.m in Sources */,
+				B21324A21B6206CA0070911F /* ZumeroUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2D949D01B61F3F7009823AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2D949C91B61F3F7009823AC /* mergZumero */;
+			targetProxy = B2D949CF1B61F3F7009823AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B2D949D91B61F3F8009823AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					"\"$(LIVECODE_SDKROOT)/headers\"",
+					"\"$(SRCROOT)/Zumero\"/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIVECODE_SDKROOT = "$(USER_LIBRARY_DIR)/Application Support/RunRev/Components/LiveCodeSDK";
+				LIVECODE_TEST_EXTERNAL = mergZumero;
+				LIVECODE_TEST_STACK = "$(SRCROOT)/mergZumero/mergZumero.livecode";
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2D949DA1B61F3F8009823AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				HEADER_SEARCH_PATHS = (
+					"\"$(LIVECODE_SDKROOT)/headers\"",
+					"\"$(SRCROOT)/Zumero\"/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIVECODE_SDKROOT = "$(USER_LIBRARY_DIR)/Application Support/RunRev/Components/LiveCodeSDK";
+				LIVECODE_TEST_EXTERNAL = mergZumero;
+				LIVECODE_TEST_STACK = "$(SRCROOT)/mergZumero/mergZumero.livecode";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B2D949DC1B61F3F8009823AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/montegoulding/Desktop/ZSS_Client_SDK_2.0.1.2640/ios,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Zumero/ios/C",
+				);
+				LIVECODE_DEP_FILE = "$(SRCROOT)/mergZumero/mergZumero.ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B2D949DD1B61F3F8009823AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/montegoulding/Desktop/ZSS_Client_SDK_2.0.1.2640/ios,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Zumero/ios/C",
+				);
+				LIVECODE_DEP_FILE = "$(SRCROOT)/mergZumero/mergZumero.ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B2D949DF1B61F3F8009823AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "$(SRCROOT)/mergZumero/test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B2D949E01B61F3F8009823AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "$(SRCROOT)/mergZumero/test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2D949C51B61F3F7009823AC /* Build configuration list for PBXProject "mergZumero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2D949D91B61F3F8009823AC /* Debug */,
+				B2D949DA1B61F3F8009823AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2D949DB1B61F3F8009823AC /* Build configuration list for PBXNativeTarget "mergZumero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2D949DC1B61F3F8009823AC /* Debug */,
+				B2D949DD1B61F3F8009823AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2D949DE1B61F3F8009823AC /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2D949DF1B61F3F8009823AC /* Debug */,
+				B2D949E01B61F3F8009823AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2D949C21B61F3F7009823AC /* Project object */;
+}

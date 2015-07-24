@@ -1,0 +1,4 @@
+framework Foundation
+framework CFNetwork
+library z
+library sqlite3

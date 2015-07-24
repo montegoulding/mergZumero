@@ -1,0 +1,46 @@
+//
+//  mergZumero.lcidlc
+//  mergZumero
+//
+//  Created by Monte Goulding on 24/07/2015.
+//  Copyright 2015 M E R Goulding. All rights reserved.
+//
+
+// The name of the external (note external name must be all lowercase!)
+external mergZumero
+
+use objc-objects
+
+tail function mergZumeroIsSyncing // Determine if there is currently a sync happening
+    return boolean
+
+tail command mergZumeroSync // Initiate a sync. When complete the mergZumeroSyncCompleted message will be sent to the object that called mergZumeroSync. In the event of an error the mergZumeroSyncError message will be sent instead with a parameter giving an error description.
+    in pFileName as objc-string // The full path of the local SQLite dbfile to be synched. If the file does not yet exist, it will be created.
+    in pServerURL as objc-string // The base URL of your Zumero server. If your server is hosted using an inter- nationalized domain name (IDN), this URL should be the Punycode encoded version on the domain.
+    in pRemote as objc-string // The remote name
+    optional in pAuthSchemeJSON as objc-string default "" // JSON string representation of the authentication scheme. May be empty to sync anonymously (if permitted by the server). Eg {"scheme_type":"table","table":"remoteAuthTable"}"
+    optional in pUser as objc-string default "" // Username under which to sync. May be empty to sync anonymously (if permitted).
+    optional in pPassword as objc-string default "" // Password under which to sync. May be empty to sync anonymously (if permitted).
+    return objc-string // Error message if the command fails before sync begins
+
+tail command mergZumeroQuarantineSinceLastSync // Move un-synced local changes into an isolated holding area. Typically, the reason to do so is because the local changes conflict with other changes already on the server.
+    in pFileName as objc-string // The full path of the local SQLite dbfile to be synched. If the file does not yet exist, it will be created.
+    return objc-string // A quarantine ID that may be used with mergZumeroQuarantineSync or an error message if the quarantine failed
+
+
+tail command mergZumeroSyncQuarantine // Initiate a quarantine sync. When complete the mergZumeroSyncCompleted message will be sent to the object that called mergZumeroSync. In the event of an error the mergZumeroSyncError message will be sent instead with a parameter giving an error description.
+    in pFileName as objc-string // The full path of the local SQLite dbfile to be synched. If the file does not yet exist, it will be created.
+    in pQuarantineID as objc-string // A quarantine ID as returned by mergZumeroQuarantineSinceLastSync
+    in pServerURL as objc-string // The base URL of your Zumero server. If your server is hosted using an inter- nationalized domain name (IDN), this URL should be the Punycode encoded version on the domain.
+    in pRemote as objc-string // The remote name
+    optional in pAuthSchemeJSON as objc-string default "" // JSON string representation of the authentication scheme. May be empty to sync anonymously (if permitted by the server). Eg {"scheme_type":"table","table":"remoteAuthTable"}"
+    optional in pUser as objc-string default "" // Username under which to sync. May be empty to sync anonymously (if permitted).
+    optional in pPassword as objc-string default "" // Password under which to sync. May be empty to sync anonymously (if permitted).
+    return objc-string // Error message if the command fails before sync begins
+
+// * message mergZumeroSyncCompleted // Sent to the control that called mergZumeroSync when it completes successfully
+// * end
+
+// * message mergZumeroSyncError // Sent to the control that called mergZumeroSync when it fails
+// param pError as objc-string // An error string describing the cause of the error if available
+// * end
