@@ -36,6 +36,8 @@ NSString * mergZumeroSync(NSString * pFileName, NSString * pServerURL, NSString 
                                              (unsigned long)NULL), ^(void) {
         NSError * t_error = nil;
         
+        isSyncing = true;
+        
         BOOL ok = [ZumeroSync Sync:pFileName cipherKey:nil serverUrl:pServerURL remote:pRemote authSchemeJS:pAuthSchemeJSON user:pUser password:pPassword error: &t_error];
     
         isSyncing = false;

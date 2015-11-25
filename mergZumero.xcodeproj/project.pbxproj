@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B21324981B61F6120070911F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B21324971B61F6120070911F /* libsqlite3.dylib */; };
-		B213249A1B61F6290070911F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B21324991B61F6290070911F /* libz.dylib */; };
 		B213249C1B61F6300070911F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B213249B1B61F6300070911F /* CFNetwork.framework */; };
 		B21324A11B6206CA0070911F /* ZumeroSync.m in Sources */ = {isa = PBXBuildFile; fileRef = B213249E1B6206CA0070911F /* ZumeroSync.m */; };
 		B21324A21B6206CA0070911F /* ZumeroUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B21324A01B6206CA0070911F /* ZumeroUtil.m */; };
@@ -36,6 +34,7 @@
 		B213249F1B6206CA0070911F /* ZumeroUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZumeroUtil.h; path = Zumero/ios/src/ZumeroUtil.h; sourceTree = "<group>"; };
 		B21324A01B6206CA0070911F /* ZumeroUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZumeroUtil.m; path = Zumero/ios/src/ZumeroUtil.m; sourceTree = "<group>"; };
 		B21324A31B6206DB0070911F /* zumero_client_api.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = zumero_client_api.a; path = Zumero/ios/C/zumero_client_api.a; sourceTree = "<group>"; };
+		B2895C7B1BE8C0390009CC81 /* Global.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Global.xcconfig; path = ../Global.xcconfig; sourceTree = "<group>"; };
 		B2D949CA1B61F3F7009823AC /* libmergZumero.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmergZumero.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D949CE1B61F3F7009823AC /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D949D21B61F3F8009823AC /* mergZumero.ios */ = {isa = PBXFileReference; lastKnownFileType = text; path = mergZumero.ios; sourceTree = "<group>"; };
@@ -51,8 +50,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B213249C1B61F6300070911F /* CFNetwork.framework in Frameworks */,
-				B213249A1B61F6290070911F /* libz.dylib in Frameworks */,
-				B21324981B61F6120070911F /* libsqlite3.dylib in Frameworks */,
 				B21324A41B6206DB0070911F /* zumero_client_api.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +60,7 @@
 		B2D949C11B61F3F7009823AC = {
 			isa = PBXGroup;
 			children = (
+				B2895C7B1BE8C0390009CC81 /* Global.xcconfig */,
 				B213249D1B6206CA0070911F /* ZumeroSync.h */,
 				B213249E1B6206CA0070911F /* ZumeroSync.m */,
 				B213249F1B6206CA0070911F /* ZumeroUtil.h */,
@@ -213,6 +211,7 @@
 /* Begin XCBuildConfiguration section */
 		B2D949D91B61F3F8009823AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2895C7B1BE8C0390009CC81 /* Global.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LIBRARY = "libc++";
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -220,7 +219,6 @@
 					"\"$(LIVECODE_SDKROOT)/headers\"",
 					"\"$(SRCROOT)/Zumero\"/**",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIVECODE_SDKROOT = "$(USER_LIBRARY_DIR)/Application Support/RunRev/Components/LiveCodeSDK";
 				LIVECODE_TEST_EXTERNAL = mergZumero;
 				LIVECODE_TEST_STACK = "$(SRCROOT)/mergZumero/mergZumero.livecode";
@@ -232,13 +230,13 @@
 		};
 		B2D949DA1B61F3F8009823AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2895C7B1BE8C0390009CC81 /* Global.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LIBRARY = "libc++";
 				HEADER_SEARCH_PATHS = (
 					"\"$(LIVECODE_SDKROOT)/headers\"",
 					"\"$(SRCROOT)/Zumero\"/**",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIVECODE_SDKROOT = "$(USER_LIBRARY_DIR)/Application Support/RunRev/Components/LiveCodeSDK";
 				LIVECODE_TEST_EXTERNAL = mergZumero;
 				LIVECODE_TEST_STACK = "$(SRCROOT)/mergZumero/mergZumero.livecode";
